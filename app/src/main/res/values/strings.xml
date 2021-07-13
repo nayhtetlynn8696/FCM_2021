@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FCM_2021</string>
+    <string name="result">Result Activity</string>
+    <string name="notification_activity">Notification Detail</string>
 </resources>
