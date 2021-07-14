@@ -32,6 +32,7 @@ class FcmMessageReceiverService : FirebaseMessagingService() {
         )
 
         val builder = NotificationCompat.Builder(this, getString(R.string.app_name)).apply {
+            setSmallIcon(R.mipmap.ic_launcher)
             setContentIntent(notifyPendingIntent)
         }
         with(NotificationManagerCompat.from(this)) {

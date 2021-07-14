@@ -8,7 +8,6 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
-import com.freshchat.consumer.sdk.Freshchat
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.material.textview.MaterialTextView
 import com.google.firebase.messaging.FirebaseMessaging
@@ -31,8 +30,6 @@ class MainActivity : AppCompatActivity() {
 
                     // Get new FCM registration token
                     val token = task.result
-
-                    Freshchat.getInstance(this).setPushRegistrationToken(token!!)
                     Log.d("LogData1", "Token==$token")
                 })
 
